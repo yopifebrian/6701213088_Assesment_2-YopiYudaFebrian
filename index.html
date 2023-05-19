@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ACNH Fish Information</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="fishForm">
+        <label for="fishID">Fish ID:</label>
+        <input type="text" id="fishID" name="fishID" required>
+        <!-- <span id="fishIDError" class="error"></span> Error message container -->
+        <button type="submit">Get Fish Information</button>
+    </form>
+
+    <div id="fishInfo">
+        <table id="fishTable" class="display" style="width:100%"></table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="script.js"></script>
+    <script>
+        // Form validation
+        // document.getElementById('fishForm').addEventListener('submit', function (event) {
+        //     var fishIDInput = document.getElementById('fishID');
+        //     var fishIDError = document.getElementById('fishIDError');
+        //     if (fishIDInput.value.trim() === '') {
+        //         fishIDError.textContent = 'Fish ID is required';
+        //         event.preventDefault(); // Prevent form submission
+        //     } else {
+        //         fishIDError.textContent = ''; // Clear error message
+        //     }
+        // });
+    </script>
+</body>
+
+</html>
