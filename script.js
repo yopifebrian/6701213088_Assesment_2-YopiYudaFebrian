@@ -48,7 +48,7 @@ $(document).ready(function () {
             },
             error: function (xhr, status, error) {
                 if (xhr.status === 404) {
-                    $('#fishInfo').html('<p>Items Not Found</p>');
+                    $('#fishInfo').html('<p>Names or ID Not Found</p>');
                 } else {
                     console.log('Error:', error);
                     $('#fishInfo').html('<p>Error occurred. Please try again.</p>');
